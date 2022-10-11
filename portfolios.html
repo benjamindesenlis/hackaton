@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="src/css/colors.css">
+    <link rel="stylesheet" href="src/css/portfolios.css">
+
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/navbar.css">
+
+    <title>Campus du Lac Digital</title>
+</head>
+
+<body>
+
+    <div class="background"></div>
+    <nav>
+        <div id="navbar">
+            <a href="index.html">
+                <div id="logoNav"></div>
+            </a>
+            <div id="navbar2">
+                <div id="navbarBurger">
+                    <div id="contact-nav"><a id="link-contact-nav" class="linkNav" href="campus.html">
+                            <i class="fas fa-comment-alt"></i><span id="contact-nav-text">Contact</span>
+                        </a></div>
+                    <div id="burger">
+                        <span id="burgerOpen"><i class="fas fa-bars"></i></span>
+                        <span id="burgerClose" class="hidden"><i class="fas fa-times"></i></span>
+                    </div>
+                </div>
+                <div id="navbarRezo">
+                    <ul>
+                        <li><a class="linkNav" href="https://www.facebook.com/campusdulac"><i
+                                    class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li><a class="linkNav" href="https://twitter.com/Campusdulac"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a class="linkNav" href="https://www.linkedin.com/school/campusdulac/"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a class="linkNav" href="https://www.instagram.com/campusdulac/"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <ul id="menuBurger" class="hiddenMenu">
+            <li><a class="menuLink linkNav" href="index.html">Accueil</a></li>
+            <li><a class="menuLink linkNav" href="campus.html">Informations</a></li>
+            <li><a class="menuLink linkNav" href="apprenants.html">Apprenants</a></li>
+            <li><a class="menuLink linkNav" href="formations.html">Formations</a></li>
+            <li><a class="menuLink linkNav" href="portfolios.html">Portfolios</a></li>
+        </ul>
+
+    </nav>
+
+
+    <div id="progressbar-right"></div>
+    <div id="scrollpath-right"></div>
+    <div class="container">
+        <div class="entete-title">
+            <h3>Portfolios</h3>
+        </div>
+        <section id="filtres">
+            <form>
+                <div class="filtres-recherche">
+                    <div class="filtres-tilte">
+                        <h3>Filtres</h3><br>
+                    </div>
+                    <div class="lesfiltres">
+                        <div>
+                            <input type="checkbox" class="increase" value="design" id="design" name="design" checked>
+                            <label for="design">Web Design</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="increase" value="chef" id="chef" name="chef" checked>
+                            <label for="chef">Chef de Projet Digital</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="increase" value="dev" id="dev" name="dev" checked>
+                            <label for="dev">Développement Web et Web Mobile</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="increase" value="graphistes" id="graphistes" name="graphistes"
+                                checked>
+                            <label for="grahistes">Graphistes</label>
+                        </div>
+                    </div>
+                    <div class="searchdiv">
+                        <i class="fas fa-search"><input type="text" id="search"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <section id="projets">
+                        <div class="projet none design">
+                            <img id="projet-1" class="projet-image"
+                                src="assets/images/travaux/portfolio_chef_projet_1.jpg" alt="projet">
+                            <div class="projet-infos">
+                                <h3 class="projet-titre">Art déco</h3>
+                                <p class="projet-description">
+                                    WED DESIGN Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                                    necessitatibus
+                                    cumque, corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projet none dev">
+                            <img id="projet-2" class="projet-image"
+                                src="assets/images/travaux/portfolio_chef_projet_2.jpg" alt="projet">
+                            <div class="projet-infos">
+                                <h3>Animaux marins</h3>
+                                <p class="projet-description">
+                                    DEV Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus
+                                    cumque,
+                                    corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projet none graphisme">
+                            <img id="projet-3" class="projet-image" src="assets/images/travaux/portfolio_designer_1.jpg"
+                                alt="projet">
+                            <div class="projet-infos">
+                                <h3 class="projet-titre">Mécanique</h3>
+                                <p class="projet-description">
+                                    GRAPHISME CHEF Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                                    necessitatibus
+                                    cumque, corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projet none design">
+                            <img id="projet-4" class="projet-image" src="assets/images/travaux/portfolio_designer_2.jpg"
+                                alt="projet">
+                            <div class="projet-infos">
+                                <h3 class="projet-titre">Danse classique</h3>
+                                <p class="projet-description">
+                                    WEB DESIGN Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                                    necessitatibus
+                                    cumque, corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projet none chef">
+                            <img id="projet-5" class="projet-image" src="assets/images/travaux/portfolio_designer_3.jpg"
+                                alt="projet">
+                            <div class="projet-infos">
+                                <h3 class="projet-titre">Histoire</h3>
+                                <p class="projet-description">
+                                    CHEF Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus
+                                    cumque,
+                                    corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projet none dev">
+                            <img id="projet-6" class="projet-image"
+                                src="assets/images/travaux/portfolio_graphiste_1.jpg" alt="projet">
+                            <div class="projet-infos">
+                                <h3 class="projet-titre">Rock</h3>
+                                <p class="projet-description">
+                                    DEV Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus
+                                    cumque,
+                                    corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projet none dev">
+                            <img id="projet-8" class="projet-image"
+                                src="assets/images/travaux/portfolio_graphiste_2.jpg" alt="projet">
+                            <div class="projet-infos">
+                                <h3 class="projet-titre">Albert Camus</h3>
+                                <p class="projet-description">
+                                    DEV Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus
+                                    cumque,
+                                    corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projet none dev">
+                            <img id="projet-8" class="projet-image" src="assets/images/travaux/portfolio_webdev_1.jpg"
+                                alt="projet">
+                            <div class="projet-infos">
+                                <h3 class="projet-titre">Notre Projet</h3>
+                                <p class="projet-description">
+                                    DEV Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus
+                                    cumque,
+                                    corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projet none dev">
+                            <img id="projet-8" class="projet-image" src="assets/images/travaux/portfolio_webdev_2.jpg"
+                                alt="projet">
+                            <div class="projet-infos">
+                                <h3 class="projet-titre">Coffee and Cigarettes</h3>
+                                <p class="projet-description">
+                                    DEV Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus
+                                    cumque,
+                                    corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projet none dev">
+                            <img id="projet-8" class="projet-image" src="assets/images/travaux/portfolio_webdev_3.jpg"
+                                alt="projet">
+                            <div class="projet-infos">
+                                <h3 class="projet-titre">Enjoy</h3>
+                                <p class="projet-description">
+                                    DEV Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur necessitatibus
+                                    cumque,
+                                    corrupti dolorum magnam vel assumenda aliquid. Dignissimos, earum expedita?
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="privacy-policy">
+                <img class="footer-image" src="./images/Bibliotheque hackaton/MicrosoftTeams-image_2.gif" alt="">
+                <h4>Hackathon Team 1, All rights reserved © 2021</h4>
+                <p id="footext"><a href="mentions.html">Legal Notice</a> - <a href="politique.html">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="rive-gauche">
+                <div>
+                    <h4>Campus du Lac</h4>
+                    <h4 class="margin"> Rive gauche</h4>
+                </div>
+                <div>
+                    <p>10 Rue Rene Cassin</p>
+                    <p>CS 31996</p>
+                    <p>33071 Bordeaux Cedex</p>
+                    <p>Téléphone: 05 56 79 52 00</p>
+                </div>
+            </div>
+            <div class="rive-droite">
+                <div>
+                    <h4>Campus du Lac</h4>
+                    <h4 class="margin">Rive droite</h4>
+                </div>
+                <div>
+                    <p>7 bis rue max Linder</p>
+                    <p>BP 194</p>
+                    <p>33504 Libourne Cedex</p>
+                    <p>Téléphone: 05 56 79 52 00</p>
+                </div>
+            </div>
+            <div class="contact">
+                <h4 class="margin">Contact</h4>
+                <p>campus@formation-lac.com</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="src/js/burger.js"></script>
+    <script src="src/js/scrollBar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="src/js/portfolios.js"></script>
+    <script src="src/js/infos.js"></script>
+</body>
+
+
+</html>

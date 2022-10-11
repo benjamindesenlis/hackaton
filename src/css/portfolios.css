@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+body, p,
+h3,
+label {
+  color: white;
+}
+
+label {
+  font-size: 1.3em;
+}
+.none {
+  display: none;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 50px;
+  margin-top: 78px;
+}
+
+
+/* **************** Background **************** */
+
+.background {
+  z-index: -1;
+  background-image: url("../../assets/images/entete/Portfolio_entete.jpg");
+}
+
+/* ENTETE */
+.entete-title {
+  margin: 0 auto;
+  text-align: center;
+  background: var(--color-impair);
+  padding: 17px;
+  border-radius: 15px;
+  margin-bottom: 70px;
+  /* margin-top: -25px; */
+}
+
+.lesfiltres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+
+
+.filtres-recherche {
+  padding: 10px;
+  line-height: 1.7em;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--color-pair);
+  border-radius: 15px;
+  margin-bottom: 70px;
+}
+
+#search {
+  border-radius: 15px;
+  border: none;
+  margin-left: 20px;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+#projets {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+}
+
+
+#projets img {
+  border-radius: 20px;
+}
+
+.projet {
+  grid-column: span 12;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.projet-image  {
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.projet-image:hover {
+  transform: scale(1.05)
+}
+
+.projet-infos {
+  background-color: var(--color-impair);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 460px) {
+  #projets{
+    gap: 30px;
+  }
+  
+  .container {
+    max-width: 800px;
+  }
+  
+.entete-title h3 {
+  padding: 30px;
+}
+
+  
+  .projet {
+    grid-column: span 6;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .container {
+    max-width: 800px;
+    margin-top: 300px;
+  }
+
+  .lesfiltres {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom : 20px;
+  }
+  .entete-title h3 {
+    padding: 30px;
+  }
+
+ 
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    margin-top: 250px;
+  }
+  .entete-title h3 {
+    padding: 30px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 960px;
+  }
+  #projets{
+    gap: 40px;
+  }
+  .entete-title h3 {
+    padding: 30px;
+  }
+
+  .projet { grid-column: span 4;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  #projets{
+    gap: 60px;
+  }
+
+  .projet { grid-column: span 3; }
+}
+
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+  }
+  .entete-title h3 {
+    padding: 30px;
+  }
+}

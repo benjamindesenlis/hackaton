@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: white;
+  z-index: -10;
+  text-align: center;
+  height: 100%;
+}
+
+nav {
+  text-align: left;
+}
+
+a {
+  color: var(--color-impair);
+}
+#scrollpath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: 10px;
+  background: linear-gradient(
+    to top,
+    var(--color-impair) 0%,
+    var(--color-pair) 100%
+  );
+  animation: animate 5s linear infinite;
+}
+
+#progressbar-right:before,
+#progressbar-right:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    var(--color-impair) 0%,
+    var(--color-pair) 100%
+  );
+  filter: blur(10px);
+}
+#progressbar-right:after {
+  filter: blur(30px);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 50px;
+  margin-top: 52px;
+}
+.background {
+  background-image: url("../../assets/images/entete/accueil_entete.jpg");
+}
+
+/* ********** Premier bloc avec le slider ************ */
+
+.entete-container {
+  background: var(--color-impair);
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.entete-container h3 {
+  color: white;
+  padding: 10px;
+}
+
+.entete {
+  position: relative;
+  background-image: url("../../assets/images/Accueil_bienvenu.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.entete img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+button#btn-travaux,
+#btn-eleves,
+#btn-chef,
+#btn-graphiste,
+#btn-dev,
+#btn-designer {
+  padding: 8px 35px;
+  border-radius: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background: var(--color-light);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  color: var(--color-pair);
+}
+
+#btn-formations {
+  border-radius: 40px;
+  padding: 3px 10px;
+  margin-top: 5px;
+}
+
+.slick-prev {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 10;
+  border: none;
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  padding: 5px;
+  background-color: var(--color-pair);
+}
+
+.slick-next {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  border: none;
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  padding: 5px;
+  background-color: var(--color-pair);
+}
+
+i.fa-arrow-left,
+i.fa-arrow-right {
+  color: var(--color-light);
+}
+/* *********** Second bloc avec les formations ************ */
+
+.formation-container {
+  background: var(--color-pair);
+  text-align: center;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 15px;
+  position: relative;
+  height: 300px;
+  margin-bottom: 70px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.formation-container h3 {
+  color: white;
+  padding: 10px;
+}
+
+.slider-formation img {
+  margin: 0 auto;
+  height: 210px;
+}
+
+p.titre-formation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: var(--color-light);
+}
+
+#formation-desktop {
+  display: none;
+}
+/* ************* Troisieme bloc avec les carte etudiants *************** */
+
+.titre-etudiants {
+  color: var(--color-pair);
+  margin-bottom: 20px;
+}
+.slider-eleves-container {
+  height: 320px;
+  margin: 0 auto;
+  background: var(--color-impair);
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 115px;
+}
+
+.eleves-desktop {
+  display: none;
+}
+
+.eleve-container {
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.eleve-container p {
+  margin-bottom: 5px;
+}
+
+.eleve-container img {
+  margin: 0 auto;
+}
+
+.eleve-description {
+  font-style: italic;
+}
+
+#btn-eleves {
+  margin-top: 20px;
+}
+
+.btn-eleves-container {
+  margin-top: 20px;
+  background-color: var(--color-pair);
+  height: 60px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.desktop {
+  display: none;
+}
+/* **************** FOOTER ******************* */
+
+.footer {
+  background: var(--color-impair);
+  margin-top: 70px;
+  color: white;
+  padding: 20px;
+}
+
+.footer hr {
+  border-color: rgba(180, 180, 241, 0.548);
+}
+
+.privacy-policy {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.privacy-policy img {
+  width: 30%;
+}
+
+.privacy-policy {
+  font-size: 0.8rem;
+}
+
+.privacy-policy p {
+  color: rgb(131, 131, 226);
+
+  margin: 0;
+  padding: 0;
+  outline-width: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .btn-eleves-container {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    margin-top: 194px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .formation-container {
+    height: 320px;
+    position: relative;
+  }
+  #slider-formation,
+  #btn-formations {
+    display: none;
+  }
+
+  #formation-desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  #formation-desktop img {
+    width: 150px;
+    border-radius: 15px;
+    margin: 0 30px;
+  }
+
+  .chef-container,
+  .designer-container,
+  .graphiste-container,
+  .dev-container {
+    position: relative;
+  }
+
+  #btn-chef,
+  #btn-graphiste,
+  #btn-dev,
+  #btn-designer {
+    position: absolute;
+    width: 90%;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .eleves-desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  .eleves-desktop img {
+    width: 100px;
+  }
+
+  .slider-eleves-container {
+    height: 350px;
+    background: none;
+    padding: 0;
+  }
+
+  .eleve-container {
+    background-color: var(--color-impair);
+    border-radius: 15px;
+    padding: 30px;
+    flex-direction: column;
+    padding: 8px 10px;
+    width: 300px;
+    margin: 0 20px;
+  }
+
+  #slider-eleves {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .btn-eleves-container {
+    margin-top: -5px;
+    background-color: var(--color-pair) none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  button#btn-eleves.btn-desktop {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .entete {
+    background-position-y: -160px;
+  }
+
+  .formation-container {
+    height: 380px;
+    position: relative;
+  }
+
+  #formation-desktop img {
+    width: 180px;
+    margin: 0 40px;
+  }
+  .desktop {
+    margin-top: 20px;
+  }
+
+  .eleve-container {
+    background-color: var(--color-impair);
+    border-radius: 15px;
+    padding: 30px;
+    padding: 8px 10px;
+    width: 300px;
+    margin: 0 20px;
+  }
+
+  .eleves-desktop img {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .formation-container {
+    height: 420px;
+  }
+
+  .entete-container h3 {
+    padding: 30px;
+  }
+
+  .formation-container h3 {
+    padding: 30px;
+  }
+
+  #formation-desktop img {
+    width: 180px;
+    margin: 0 70px;
+  }
+  .entete {
+    background-position-y: -180px;
+  }
+}

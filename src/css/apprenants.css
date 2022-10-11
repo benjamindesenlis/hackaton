@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 63px;
+  width: 90%;
+}
+
+.background {
+  background-image: url("../../assets/images/entete/apprenants_entete.jpg");
+}
+
+
+/* ********** Premier bloc avec le titre ************ */
+
+.entete-container {
+  background: var(--color-impair);
+  border-radius: 15px;
+  margin-bottom: 70px;
+  position: relative;
+  padding: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  height: 10vh;
+}
+
+.entete-container h3 {
+  padding: 10px;
+  font-family: "Asul", sans-serif;
+  color: var(--color-light);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  text-align: center;
+}
+
+/* ************* Troisieme bloc avec les carte etudiants style insta *************** */
+
+/* ********** DEVELOPPEUR WEB ************ */
+
+.bloc {
+  margin-bottom: 70px;
+}
+.bloc h3 {
+  background-color: var(--color-pair);
+  padding: 50px;
+  padding-bottom: 80px;
+  border-radius: 15px;
+  color: var(--color-light);
+  text-align: center;
+}
+
+.carte {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  margin-top: -40px;
+  z-index: 100;
+}
+
+.carte img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+/* ****************   ELEVES  ******************* */
+
+.eleve-container {
+  text-align: center;
+  padding: 0 10px;
+  background: var(--color-impair);
+  grid-column: span 6;
+  border-radius: 15px;
+}
+
+.eleve-container p {
+  margin-bottom: 10px;
+  color: var(--color-light);
+}
+
+.eleve-container img {
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.eleve-titre {
+  font-size: 1em;
+}
+
+.eleve-description {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.eleve-age {
+  font-size: 0.8em;
+}
+/* **************** FOOTER ******************* */
+
+
+@media only screen and (min-width: 800px) {
+  .container {
+    margin-top: 295px;
+  }
+}
+  
+@media screen and (min-width: 1000px) {
+  .eleve-container {
+    grid-column: span 3;
+  }
+}

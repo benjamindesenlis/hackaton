@@ -1,0 +1,265 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  outline-width: 0;
+}
+
+body {
+  width: 100%;
+  background: var(--color-bg);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 52px;
+}
+
+.background {
+  background: url("../../assets/images/entete/Information_entete.jpg");
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+/* ************ BLOC PRESENTATION *************** */
+
+.prez-campus {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.campus-presentation {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background: #5c61af;
+  color: white;
+  border-radius: 15px;
+}
+
+.text-campus {
+  padding: 50px;
+  text-align: justify;
+  scrollbar-color: black;
+}
+
+.text-campus h3 {
+  text-align: center;
+}
+
+.buttonpres {
+  margin: 10px auto;
+  padding: 12px 40px;
+  border-radius: 15px;
+  border: none;
+  background: #424684;
+  color: white;
+  box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.541);
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background: #424684;
+  color: white;
+  box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.541);
+  text-align: center;
+}
+
+/* ************ BLOC PORTE OUVERTE ************* */
+
+.porte-ouverte {
+  width: 80%;
+  height: 220px;
+  margin: 50px auto;
+  text-align: center;
+  background: #424684;
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.porte-ouverte h3 {
+  padding: 22px;
+}
+
+.backgroundPO {
+  height: 100%;
+  background: url("../../assets/images/informations_porteouverte.jpg")
+    center/cover;
+}
+
+.porte-ouverte button {
+  position: absolute;
+  padding: 5px 25px;
+  border-radius: 15px;
+  top: 85%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: #424684;
+}
+
+/* ************** TROISIEME BLOC AVEC GRID MAP GOOGLE *************** */
+
+.grid-map {
+  width: 80%;
+  background: #424684;
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
+
+.grid-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* *********** QUATRIEME BLOC AVEC LE FORMULAIRE ************* */
+
+#formation-select {
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+#butbut {
+  padding: 10px 30px;
+}
+
+.formulaire {
+  width: 80%;
+}
+
+.formulaire-container {
+  background: #5c61af;
+  border-radius: 15px;
+  color: white;
+  padding: 30px;
+  align-items: center;
+  line-height: 2em;
+}
+
+.formulaire-container h3 {
+  padding-bottom: 20px;
+}
+
+#message,
+.formulaire-container input {
+  color: #424684;
+  padding: 3px 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+#message {
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+  height: 100px;
+  width: 100%;
+}
+
+@media screen and (min-width: 530px) {
+  .porte-ouverte {
+    width: 80%;
+    height: 500px;
+  }
+  .formulaire {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .grid-map {
+    width: 80%;
+    height: 300px;
+  }
+  .formulaire input {
+    padding: 10px 70px;
+  }
+  .formulaire h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .porte-ouverte button {
+    font-size: 2rem;
+    padding: 20px 70px;
+    top: 85%;
+    left: 15%;
+  }
+  .grid-container img {
+    border-radius: 15px;
+  }
+  .text-campus {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  .text-campus::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  #message {
+    padding-block-start: 10px;
+    padding-left: 10px;
+  }
+  .grid-text1,
+  .grid-text2 {
+    font-size: larger;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    margin-top: 204px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+  }
+}

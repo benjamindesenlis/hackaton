@@ -1,0 +1,75 @@
+:root {
+    --color-impair: #5C61AF;
+    --color-pair: #424680;
+    --color-bg: #E4E4E4;
+    --color-light: #ffffff;
+    --color-footer: #6E74D0;
+}
+
+
+p, a, li {
+	font-family: 'Lato', sans-serif;
+    
+}
+
+
+p {
+    font-size: 0.8em;
+}
+
+a {
+    font-size: 0.8em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Asul', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Asul', sans-serif;
+        font-weight: bold;
+        font-size: 1.1em
+    }
+
+    p { font-size: 1em; }
+    
+    a { font-size: 1em; }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Asul', sans-serif;
+        font-weight: bold;
+        font-size: 1.2em
+    }
+
+    p { font-size: 1.1em; }
+    
+    a { font-size: 1.1em; }
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Asul', sans-serif;
+        font-weight: bold;
+        font-size: 1.3em
+    }
+
+    p { font-size: 1.1em; }
+    
+    a { font-size: 1.1em; }
+
+}

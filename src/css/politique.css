@@ -1,0 +1,83 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background: var(--color-bg);
+}
+
+.background {
+  background: url("../../assets/images/entete/Information_entete.jpg");
+}
+
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 68px;
+  position: relative;
+}
+
+main p {
+  font-family: "Lato", sans-serif;
+  color: var(--color-impair);
+  font-size: 1rem;
+}
+
+main h3 {
+  font-family: "Asul", sans-serif;
+  font-weight: bold;
+  color: var(--color-impair);
+}
+
+.bloc-mention {
+  padding: 0 30px 0 30px;
+}
+
+/* ************ BLOC PRESENTATION *************** */
+
+.politique-presentation {
+  margin: 0 auto;
+  text-align: center;
+  background: var(--color-impair);
+  padding: 17px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.politique-presentation p {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: var(--color-light);
+}
+
+.politique-presentation h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: var(--color-light);
+}
+
+.politique-text {
+  color: var(--color-impair);
+  text-align: center;
+  padding: 30px;
+}
+
+.politique-text {
+  text-align: justify;
+}
+
+.politique-text h3 {
+  text-align: center;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  main {
+    margin-top: 316px;
+  }
+}
